@@ -73,7 +73,7 @@ ovrs_net = Model(X, output)
 opt = Adam(lr=0.0002, beta_1=0.5)
 ovrs_net.compile(loss="binary_crossentropy", optimizer=opt, metrics=['accuracy'])
 
-#data setting
+#Data setting
 
 data_train, data_test = tf.keras.datasets.cifar10.load_data()
 
